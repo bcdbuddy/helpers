@@ -1,0 +1,40 @@
+{
+  "name": "helpers",
+  "version": "0.1.0",
+  "description": "A series of helper functions that I use in my day to day programs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "yarn test:coverage",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "test:coverage": "yarn test --coverage"
+  },
+  "keywords": ["helper", "node"],
+  "repository": "git@github.com:bcdbuddy/helpers.git",
+  "author": "Babacar Cissé DIA <bcdbuddy@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.0.1",
+    "jest-mock-extended": "^1.0.8",
+    "ts-jest": "^25.5.0",
+    "typescript": "^3.8.3"
+  },
+  "engines": {
+    "yarn": "1.x",
+    "node": "12.x",
+    "npm": "6.x"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json-summary",
+      "text",
+      "lcov"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/bcdbuddy/helpers/issues"
+  },
+  "homepage": "https://github.com/bcdbuddy/helpers#readme"
+}
